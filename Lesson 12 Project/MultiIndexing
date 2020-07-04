@@ -1,0 +1,28 @@
+import pandas as pd
+import numpy as np
+
+arrays = [['bar', 'bar', 'baz', 'baz', 'foo', 'foo', 'qux', 'qux'],
+          ['one', 'two', 'one', 'two', 'one', 'two', 'one', 'two']]
+tuples1=list(zip(arrays))
+tuples=list(zip(*arrays))
+
+print('Normal tuple')
+print(tuples1)
+print('')
+
+print('Tuple with *')
+print(tuples)
+print('')
+
+print('MultiIndex.from_tuples')
+
+index = pd.MultiIndex.from_tuples(tuples, names=['first', 'second'])
+print(index)
+print('')
+
+print('create data frame with pd.series')
+s = pd.Series(data=np.random.randn(8), index=index)
+print(s)
+
+
+print(s.ix['ba'])
