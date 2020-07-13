@@ -1,2 +1,6 @@
-# courses
-My courses
+# Data Science
+
+Course to introduce myself in Data Science.
+Introduction to important libraries as sklearn, seaborn, keras, Tensorflow 2.0, cufflinks, pyplot...
+
+Firsts analysis with machine learning, linear regression, logistic regression, clustering, trees and forests, Neuronal Networks...
